@@ -1,0 +1,68 @@
+@font-face {
+	font-family: 'PixelBold';
+	src: url('../../fonts//dogicabold.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
+.docs {
+	position: absolute;
+	top: 55px;
+	left: 400px;
+}
+
+.h1Docs {
+	font-family: 'PixelBold';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.pDocs {
+	width: 844px;
+	height: 100px;
+	left: 408px;
+	top: 155px;
+	font-family: 'UbuntuRegular';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 25px;
+	display: flex;
+	align-items: center;
+	color: #3d3d3d;
+	margin: 0;
+}
+
+.btnDocs {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 16px;
+	gap: 10px;
+	width: 308px;
+	height: 48px;
+	background-color: #fff;
+	box-shadow: inset 4px 3px 0px rgba(93, 150, 92, 0.67);
+	color: #439b41;
+	text-decoration: none;
+	font-size: 30px;
+	border: none;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+}
+
+.btnDocs:hover {
+	background-color: #6fb36e;
+	color: #fff;
+	text-decoration: none;
+}
+.imgDocs {
+	position: absolute;
+	top: 230px;
+	left: 240px;
+	width: 581px;
+	height: 581px;
+}

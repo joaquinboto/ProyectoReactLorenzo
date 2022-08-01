@@ -1,0 +1,112 @@
+.pFunctions {
+	color: #fff !important;
+}
+
+.cardFunction {
+	display: inline-block;
+	position: relative;
+	margin-right: 40px;
+	margin-bottom: 50px;
+}
+
+.img1 {
+	position: absolute;
+	left: 8.25%;
+	right: 72.29%;
+	top: 6.62%;
+	bottom: 62.99%;
+}
+
+.cardTitulo1 {
+	position: absolute;
+	width: 84px;
+	height: 20px;
+	left: 87px;
+	top: 177px;
+
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 20px;
+
+	text-align: center;
+
+	color: #3f3f3f;
+}
+
+.cardTitulo2 {
+	position: absolute;
+	width: 221px;
+	height: 20px;
+	left: 16px;
+	top: 177px;
+
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 20px;
+
+	text-align: center;
+
+	color: #3f3f3f;
+}
+
+.cardTitulo3 {
+	position: absolute;
+	width: 173px;
+	height: 20px;
+	left: 41px;
+	top: 177px;
+
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 20px;
+
+	text-align: center;
+
+	color: #3f3f3f;
+}
+.cardParrafo1 {
+	position: absolute;
+	width: 205px;
+	height: 111px;
+	left: 8.25%;
+	top: 214px;
+
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 20px;
+	text-align: center;
+
+	color: #3f3f3f;
+}
+
+.cardLink1 {
+	position: absolute;
+	top: 300px;
+	left: 8.25%;
+	padding: 15px 23px;
+	box-shadow: inset 4px 3px 0px rgba(93, 150, 92, 0.67);
+	font-family: 'Courier';
+	font-style: normal;
+	font-weight: bold;
+	width: 207px;
+	height: 48px;
+	border: none;
+	font-size: 22px;
+	line-height: 24px;
+	background: #ffffff;
+	text-decoration: none !important;
+	color: #439b41;
+}
+
+.cardLink1:hover {
+	color: #fff;
+	background-color: #6fb36e;
+}

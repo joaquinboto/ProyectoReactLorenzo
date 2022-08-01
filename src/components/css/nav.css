@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Pixel";
+    src: url("../../fonts/dogica.otf");
+}
+
+@font-face {
+    font-family: "PixelBold";
+    src: url("../../fonts//dogicabold.otf");
+}
+
+@font-face {
+    font-family: "UbuntuRegular";
+    src: url("../../fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+    font-family: "CourierBold";
+    src: url("../../fonts/courier-bold.ttf");
+}
+
+
+.nes-btn {
+    font-family: "CourierBold";
+    width: 197px;
+    height: 55px;
+    font-style: normal;
+    font-weight: 5;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+
+
+.ulNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ulNav li {
+    padding: 5px;
+}
+
+.divPrincipal {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, minmax(130px, auto));
+    justify-content: center;
+}
+
+.navLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    animation: question infinite 1s ease-in-out;
+}
+
+@keyframes question {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(-10%);
+    }
+
+}
+
+
+
+
+.navRedes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+.navFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
