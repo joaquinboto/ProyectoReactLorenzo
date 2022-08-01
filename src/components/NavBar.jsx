@@ -2,11 +2,6 @@ import React from 'react';
 import 'nes.css/css/nes.min.css';
 import './css/nav.css';
 import logo from './assets/LOGO.png';
-import telegram from './assets/ico-telegram2.png';
-import wpp from './assets/ico-whatsapp.png';
-import github from './assets/githubIcon.png';
-import email from './assets/emailIcon.png';
-import linkedin from './assets/ico-linkedin relleno.png';
 import question from './assets/question.png';
 import { Link } from 'react-router-dom';
 
@@ -35,11 +30,11 @@ const NavBar = () => {
 			</div>
 			<div className="divListas">
 				<ul className="ulNav">
-					{/* <li onMouseOver={handleClick}>
+					<li onMouseOver={handleClick}>
 						<Link to="/" className="nes-btn">
 							Home
 						</Link>
-					</li> */}
+					</li>
 					<li onMouseOver={handleClick}>
 						<Link to="/whoiam" className="nes-btn">
 							Who I am?
@@ -63,15 +58,15 @@ const NavBar = () => {
 				</ul>
 			</div>
 			<div className="navRedes">
-				<img src={github} alt="" />
-				<img src={email} alt="" />
-				<img src={linkedin} alt="" />
+				<div className='redesHover1'></div>
+				<div className='redesHover2'></div>
+				<div className='redesHover3'></div>
 			</div>
 			<div className="navFooter">
 				<img className="question" src={question} alt="" />
-				<div>
-					<img style={{ padding: '10px' }} src={telegram} alt="" />
-					<img style={{ padding: '10px' }} src={wpp} alt="" />
+				<div style={{display: "flex" }}>
+					<div className='hoverWpp'></div>
+					<div className='hoverTll'></div>
 				</div>
 			</div>
 		</div>

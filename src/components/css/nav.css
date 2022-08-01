@@ -84,6 +84,63 @@
     align-items: center;    
 }
 
+.redesHover1 {
+    width: 38px;
+    height: 38px;
+    background-image: url("../assets//githubIcon.png");
+}
+
+.redesHover1:hover {
+    transition: all 0.5s ease-in-out;
+    background-image: url("../assets/redesgithover.svg");
+}
+
+.redesHover2 {
+    width: 38px;
+    height: 38px;
+    background-image: url("../assets/emailIcon.png");
+}
+
+.redesHover2:hover {
+    transition: all 0.5s ease-in-out;
+    background-image: url("../assets/redesmailhover.svg");
+}
+
+.redesHover3{
+    width: 38px;
+    height: 38px;
+    background-image: url("../assets/ico-linkedin\ relleno.png")
+}
+
+.redesHover3:hover {
+    transition: all 0.5s ease-in-out;
+    background-image: url("../assets/redesInhover.svg");
+}
+
+.hoverWpp {
+    width: 54px;
+    height: 54px;
+    background-image: url("../assets/ico-whatsapp.png");
+}
+
+.hoverWpp:hover {
+    transition: all 0.5s ease-in-out;
+    background-image: url("../assets/wppHover.png");
+}
+
+.hoverTll {
+    width: 54px;
+    height: 54px;
+    background-image: url("../assets/ico-telegram2.png");
+}
+
+.hoverTll:hover {
+    transition: all 0.5s ease-in-out;
+    background-image: url("../assets/telegramHover.png");
+}
+
+
+
 .navFooter {
     display: flex;
     flex-direction: column;

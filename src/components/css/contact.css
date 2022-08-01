@@ -27,7 +27,7 @@
 
 .h1Title {
     font-family: "PixelBold";
-    font-size: 28px;
+    font-size: 40px;
 }
 
 .inputLabel {
@@ -111,7 +111,7 @@
 }
 
 .btnForm {
-    width: 305px;
+    width: 308px;
     height: 48px;
     left: 11px;
     top: 16px;
