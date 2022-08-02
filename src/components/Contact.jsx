@@ -74,7 +74,7 @@ const Contact = () => {
                     <p className="h4footer">Consult here or you can send me an email</p>
                     <div style={{display: "flex"}}>
                         <img src={iconEmail} alt="" />
-                        <p className="pFooter" >dr.reyeslorenzo@gmail.com</p>
+                        <p className="pFooter" >lreyes@udesa.edu.ar</p>
                     </div>
                 </div>
             </div>

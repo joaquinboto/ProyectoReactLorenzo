@@ -36,7 +36,7 @@ const WhoIAm = () => {
         variants={variants} initial="initial" animate="in" exit="out" transition={pageTransition}
         className="who-i-am">
             <div>
-                <h1 className="h1Who">Who I am</h1>
+                <h1 className="h1Who">Who I am !?</h1>
                 <p className="pWho">Hi my name is Lorenzo and I am a quant. After studying Law and Finance at Argentina, I found out in programming my passion to bring into a reality my imagination. End up being a developer that grabs a necessity and see it as a opportunity to solve it.
                 </p>
                 <p className="pWho">When I design my code I keep in mind some standards: </p>

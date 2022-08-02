@@ -58,15 +58,25 @@ const NavBar = () => {
 				</ul>
 			</div>
 			<div className="navRedes">
-				<div className='redesHover1'></div>
-				<div className='redesHover2'></div>
-				<div className='redesHover3'></div>
+				<a href='https://github.com/lorenzoreyes'>
+					<div className='redesHover1'></div>
+				</a>
+				<a href="mailto:lreyes@udesa.edu.ar">
+					<div className='redesHover2'></div>
+				</a>
+				<a href="https://www.linkedin.com/in/lorenzo-reyes-77717b96/">
+					<div className='redesHover3'></div>
+				</a>
 			</div>
 			<div className="navFooter">
 				<img className="question" src={question} alt="" />
 				<div style={{display: "flex" }}>
-					<div className='hoverWpp'></div>
-					<div className='hoverTll'></div>
+					<a href="https://wa.me/5492477562603">
+						<div className='hoverWpp'></div>
+					</a>
+					<a href="https://t.me/quanvas">
+						<div className='hoverTll'></div>
+					</a>
 				</div>
 			</div>
 		</nav>
