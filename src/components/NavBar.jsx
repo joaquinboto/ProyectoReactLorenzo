@@ -22,7 +22,7 @@ const NavBar = () => {
 	handleClick();
 
 	return (
-		<div className="divPrincipal">
+		<nav className="divPrincipal">
 			<div className="navLogo">
 				<Link to="/home">
 					<img src={logo} alt="" />
@@ -69,7 +69,7 @@ const NavBar = () => {
 					<div className='hoverTll'></div>
 				</div>
 			</div>
-		</div>
+		</nav>
 	);
 };
 

@@ -4,6 +4,7 @@ import "nes.css/css/nes.min.css";
 import "./css/contact.css";
 import iconEmail from './assets/ico-email1.svg';
 import logoContact from './assets/logoContacto.png';
+import { motion } from "framer-motion";
 
 
 const Contact = () => {
@@ -24,8 +25,32 @@ const Contact = () => {
         e.preventDefault();
     }
 
+    const variants = {
+		initial: {
+			opacity: 0,
+			x: "-100vw",
+			scale: 0.8,
+		},
+		in: {
+			opacity: 1,
+			x: 0,
+			scale: 1,
+		},
+		out: {
+			opacity: 0,
+			x: "-100vw",
+			scale: 1.2,
+		}
+	}
+
+	const pageTransition = {
+		duration: 0.5
+	}
+
     return (
-        <div className="divPrincipalContact">
+        <motion.div
+        
+        variants={variants} initial="initial" animate="in" exit="out" transition={pageTransition} className="divPrincipalContact">
             <div className="divIzq">
                 <div className="divEncabezado">
                     <h1 className="h1Title">Contact</h1>
@@ -56,7 +81,7 @@ const Contact = () => {
             <div className="footerContact">
                 <img width={"400px"} src={logoContact} alt="" />
             </div>
-        </div>
+        </motion.div>
     )
 }
 
