@@ -6,7 +6,7 @@ import cardImg2 from './assets/img2-functions.svg';
 import cardImg3 from './assets/img3-functions.svg';
 const Functions = () => {
 	return (
-		<div className="docs">
+		<div className="docs1">
 			<div>
 				<h1 className="h1Docs">Functions</h1>
 				<p className="pDocs">My software is designed to serve for all daily tasks related to finance. From to know how the market is performing right now and its metric to rebalance a portfolio under a specific criteria.</p>

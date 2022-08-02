@@ -29,7 +29,7 @@ const Contact = () => {
             <div className="divIzq">
                 <div className="divEncabezado">
                     <h1 className="h1Title">Contact</h1>
-                    <h6 className="h6Sub">Box to leave a message, requesting a demo of a specific software or a more personal enquiry.</h6>
+                    <p className="h6Sub">Box to leave a message, requesting a demo of a specific software or a more personal enquiry.</p>
                 </div>
                 <form className="formulario" onClick={handleSubmit} action="">
                     <div>

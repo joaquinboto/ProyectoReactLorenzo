@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/docs.css';
-import img2 from './/assets/img-docs.gif';
+import img2 from './assets/mesa.png';
 import img3 from './assets/githubIcon.png';
 
 const Docs = () => {
