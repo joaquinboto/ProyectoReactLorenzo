@@ -37,8 +37,7 @@
 }
 
 .divCards {
-    display: flex;
-flex-direction: column;
+display: flex;
 align-items: flex-start;
 padding: 0px;
 gap: 22px;
