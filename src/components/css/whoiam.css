@@ -1,96 +1,95 @@
 @font-face {
-    font-family: "Pixel";
-    src: url("../../fonts/dogica.otf");
+	font-family: 'Pixel';
+	src: url('../../fonts/dogica.otf');
 }
 
 @font-face {
-    font-family: "PixelBold";
-    src: url("../../fonts//dogicabold.otf");
+	font-family: 'PixelBold';
+	src: url('../../fonts//dogicabold.otf');
 }
 
 @font-face {
-    font-family: "UbuntuRegular";
-    src: url("../../fonts/Ubuntu-Regular.ttf");
+	font-family: 'UbuntuRegular';
+	src: url('../../fonts/Ubuntu-Regular.ttf');
 }
 
 @font-face {
-    font-family: "CourierBold";
-    src: url("../../fonts/courier-bold.ttf");
+	font-family: 'CourierBold';
+	src: url('../../fonts/courier-bold.ttf');
 }
-
 
 .who-i-am {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-rows: minmax(10px, 315px);
-    align-content: center;
-    justify-content: center;
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template-rows: minmax(10px, 315px);
+	align-content: center;
+	justify-content: center;
 }
 
 .h1Who {
-    font-family: "PixelBold";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 21px;
+	font-family: 'PixelBold';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	/* line-height: 21px; */
 }
 
 .divCards {
-display: flex;
-align-items: flex-start;
-padding: 0px;
-gap: 22px;
-width: 955px;
-height: 160px;
-left: 405px;
-top: 400px;
+	display: flex;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 22px;
+	width: 955px;
+	height: 160px;
+	left: 405px;
+	top: 400px;
 }
 
-.pWho{
-    width: 844px;
-    height: 150px;
-    left: 408px;
-    top: 155px;
-    font-family: 'UbuntuRegular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 25px;
-    display: flex;
-    align-items: center;
-    color: #3D3D3D;
+.pWho {
+	width: 844px;
+	height: 150px;
+	left: 408px;
+	top: 155px;
+	font-family: 'UbuntuRegular';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 25px;
+	display: flex;
+	align-items: center;
+	color: #3d3d3d;
 }
 
 .footerWho {
-    background-image: url(../assets//whoFooter.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 955px;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	background-image: url(../assets//whoFooter.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 955px;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.pFooterWho{
-    font-family: 'CourierBold';
-    font-style: normal;
-    font-weight: 5;
-    font-size: 22px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    width: 900.41px;
-    height: 67px;
-    left: 437.36px;
-    top: 649px;
+.pFooterWho {
+	font-family: 'CourierBold';
+	font-style: normal;
+	font-weight: 5;
+	font-size: 22px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+	width: 900.41px;
+	height: 67px;
+	left: 437.36px;
+	top: 649px;
 }
 
 .divFooter {
-    display: flex;
-    left: 405px;
-    top: 400px;
-    padding-top: 60px;
+	display: flex;
+	left: 405px;
+	top: 400px;
+	padding-top: 60px;
 }

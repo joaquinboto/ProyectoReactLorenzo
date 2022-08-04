@@ -10,8 +10,8 @@ const Functions = () => {
 	const variants = {
 		initial: {
 			opacity: 0,
-			x: "-100vw",
-			scale: 0.8
+			x: '-100vw',
+			scale: 0.8,
 		},
 		in: {
 			opacity: 1,
@@ -20,16 +20,16 @@ const Functions = () => {
 		},
 		out: {
 			opacity: 0,
-			x: "-100vw",
+			x: '-100vw',
 			scale: 1.2,
-		}
-	}
+		},
+	};
 
 	const pageTransition = {
 		duration: 0.5,
-	}
+	};
 	return (
-		<motion.div variants={variants} initial="initial" animate="in" exit="out" transition={pageTransition} className="docs1">
+		<motion.div variants={variants} initial="initial" animate="in" exit="out" transition={pageTransition} className="docs">
 			<div>
 				<h1 className="h1Docs">Functions</h1>
 				<p className="pDocs">My software is designed to serve for all daily tasks related to finance. From to know how the market is performing right now and its metric to rebalance a portfolio under a specific criteria.</p>
@@ -41,8 +41,8 @@ const Functions = () => {
 					<img src={cardImg1} alt="img 1" className="img1" />
 					<h1 className="cardTitulo1">QUANVAS</h1>
 					<p className="cardParrafo1">Prepare some Quanvas to invest, monitor or rebalance them</p>
-					<Link to={"/contact"} className="cardLink1">
-					Request Demo
+					<Link to={'/contact'} className="cardLink1">
+						Request Demo
 					</Link>
 				</div>
 				<div className="cardFunction">
@@ -50,8 +50,8 @@ const Functions = () => {
 					<img src={cardImg2} alt="img 2" className="img1" />
 					<h1 className="cardTitulo2">TRADING BOTS BINANCE</h1>
 					<p className="cardParrafo1">Or even check how your trading bots Binance are performing</p>
-					<Link to={"/contact"} className="cardLink1">
-					Request Demo
+					<Link to={'/contact'} className="cardLink1">
+						Request Demo
 					</Link>
 				</div>
 				<div className="cardFunction">
@@ -59,8 +59,8 @@ const Functions = () => {
 					<img src={cardImg3} alt="img 3" className="img1" />
 					<h1 className="cardTitulo3">ARG. FOREX WATCH</h1>
 					<p className="cardParrafo1">You can start your day, run Argentina Forex Watch to acknowledge about the market</p>
-					<Link to={"/contact"} className="cardLink1">
-					Request Demo
+					<Link to={'/contact'} className="cardLink1">
+						Request Demo
 					</Link>
 				</div>
 			</div>
