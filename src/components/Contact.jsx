@@ -5,6 +5,7 @@ import "./css/contact.css";
 import iconEmail from './assets/ico-email1.svg';
 import logoContact from './assets/logoContacto.png';
 import { motion } from "framer-motion";
+// import  emailjs  from "emailjs-com";
 
 
 const Contact = () => {
@@ -23,6 +24,14 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        // emailjs.send("gmail", "template_a8c1x09", input, "XzvdABOYaDdqQLt9Yk_OK")
+        // .then(res => {
+        //     console.log(res);
+        // })
+        // .catch(err => {
+        //     console.log(err);
+        // })
+        // e.target.reset();
     }
 
     const variants = {
