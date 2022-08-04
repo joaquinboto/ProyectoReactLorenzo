@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/docs.css';
-import img2 from './assets/mesa.png';
+import img2 from './assets/mesa.gif';
 import LineIcon from 'react-lineicons';
 import { motion } from 'framer-motion';
 
