@@ -1,36 +1,45 @@
-import React from 'react';
-import { useState } from 'react';
+import React , { useRef } from 'react';
 import 'nes.css/css/nes.min.css';
 import './css/contact.css';
 import iconEmail from './assets/ico-email1.svg';
 import logoContact from './assets/logoContacto.png';
 import { motion } from 'framer-motion';
-// import  emailjs  from "emailjs-com";
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-	const [input, setInput] = useState({
-		name: '',
-		email: '',
-		message: '',
-	});
 
-	const handleChange = (e) => {
-		setInput({
-			...input,
-			[e.target.name]: e.target.value,
-		});
-	};
+	const form = useRef();
 
-	const handleSubmit = (e) => {
+	const toastOptions = {
+		position: "bottom-right",
+		autoClose: 5000,
+		hideProgressBar: false,
+		closeOnClick: true,
+		pauseOnHover: true,
+		draggable: true,
+		progress: undefined,
+		theme: "colored"
+		};
+
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-		// emailjs.send("gmail", "template_a8c1x09", input, "XzvdABOYaDdqQLt9Yk_OK")
-		// .then(res => {
-		//     console.log(res);
-		// })
-		// .catch(err => {
-		//     console.log(err);
-		// })
-		// e.target.reset();
+
+		try {
+			const {user_name , user_email , message} = form.current.elements
+			if(user_name.value === '' || user_email.value === '' || message.value === ''){
+				toast.error('Todos los campos son obligatorios', toastOptions);
+			} else {
+				await emailjs.sendForm('service_zpe6wfb', 'template_a8c1x09', form.current , 'usZ_n87fJiEtlg1e1');;
+				form.current.reset();
+				toast.success("Successfully registered" , toastOptions);			
+			}
+			
+		} catch (error) {
+			console.log(error)
+		}
+
 	};
 
 	const variants = {
@@ -62,15 +71,15 @@ const Contact = () => {
 					<h1 className="h1Title">Contact</h1>
 					<p className="h6Sub">Box to leave a message, requesting a demo of a specific software or a more personal enquiry.</p>
 				</div>
-				<form className="formulario" onClick={handleSubmit} action="">
+				<form className="formulario" ref={form} onSubmit={handleSubmit} action="">
 					<div>
-						<input type="text" name="name" onChange={handleChange} placeholder="Text" className="nes-input" />
+						<input type="text" name="user_name"  placeholder="Name" className="nes-input" />
 					</div>
 					<div>
-						<input type="text" name="email" onChange={handleChange} placeholder="E-mail" className="nes-input" />
+						<input type="text" name="user_email"  placeholder="E-mail" className="nes-input" />
 					</div>
 					<div>
-						<textarea id="textarea_field" name="message" placeholder="Message" onChange={handleChange} className="nes-textarea" style={{ maxheight: '250px', height: '250px' }}></textarea>
+						<textarea id="textarea_field" name="message" placeholder="Message"  className="nes-textarea" style={{ maxheight: '250px', height: '250px' }}></textarea>
 					</div>
 					<div>
 						<span>
@@ -89,6 +98,7 @@ const Contact = () => {
 			<div className="footerContact">
 				<img width={'400px'} src={logoContact} alt="" />
 			</div>
+			<ToastContainer />
 		</motion.div>
 	);
 };
