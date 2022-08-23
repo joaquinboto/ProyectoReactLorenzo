@@ -27,11 +27,11 @@ const Contact = () => {
 		e.preventDefault();
 
 		try {
-			const {user_name , user_email , message} = form.current.elements
-			if(user_name.value === '' || user_email.value === '' || message.value === ''){
+			const {from_name , user_email , message} = form.current.elements
+			if(from_name.value === '' || user_email.value === '' || message.value === ''){
 				toast.error('Todos los campos son obligatorios', toastOptions);
 			} else {
-				await emailjs.sendForm('service_zpe6wfb', 'template_a8c1x09', form.current , 'usZ_n87fJiEtlg1e1');;
+				await emailjs.sendForm('service_x6fobha', 'template_9l8nrtu', form.current , 'CJNeSrbyt1eO3nYjj');;
 				form.current.reset();
 				toast.success("Successfully registered" , toastOptions);			
 			}
@@ -73,7 +73,7 @@ const Contact = () => {
 				</div>
 				<form className="formulario" ref={form} onSubmit={handleSubmit} action="">
 					<div>
-						<input type="text" name="user_name"  placeholder="Name" className="nes-input" />
+						<input type="text" name="from_name"  placeholder="Name" className="nes-input" />
 					</div>
 					<div>
 						<input type="text" name="user_email"  placeholder="E-mail" className="nes-input" />
