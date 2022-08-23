@@ -37,11 +37,16 @@
 .nes-input {
 	height: 55px;
 	width: 523px;
+	font-size: 22px;
+	font-family: 'Pixel';
 }
 
 .nes-textarea {
-	height: 55px;
+	max-height: 255px;
+	height: 255px;
 	width: 523px;
+	font-size: 22px;
+	font-family: 'Pixel';
 }
 
 ::placeholder {

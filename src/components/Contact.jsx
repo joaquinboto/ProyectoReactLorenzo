@@ -79,7 +79,7 @@ const Contact = () => {
 						<input type="text" name="user_email"  placeholder="E-mail" className="nes-input" />
 					</div>
 					<div>
-						<textarea id="textarea_field" name="message" placeholder="Message"  className="nes-textarea" style={{ maxheight: '250px', height: '250px' }}></textarea>
+						<textarea id="textarea_field" name="message" placeholder="Message"  className="nes-textarea"></textarea>
 					</div>
 					<div>
 						<span>
